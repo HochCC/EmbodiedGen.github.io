@@ -291,50 +291,45 @@
             Image here.   
           </p>
 
-          <!-- 引入 Swiper 的样式 -->
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-
-          <!-- 按钮组 -->
-          <div style="display: flex; justify-content: center; margin: 20px;">
-            <button class="tab active">Text-to-Scene</button>
-            <button class="tab">Image-to-Scene</button>
-          </div>
-
-          <!-- Swiper 轮播 -->
-          <div class="swiper-container" style="width: 90%; margin: auto;">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="static/images/layout/layout1.png" alt="coral reef" style="width: 100%; border-radius: 12px;">
-                <p>Prompt: "A vibrant coral reef teeming with life"</p>
-              </div>
-              <div class="swiper-slide">
-                <img src="static/images/layout/layout2.png" alt="castle" style="width: 100%; border-radius: 12px;">
-                <p>Prompt: "A medieval castle on a hill during sunset"</p>
-              </div>
-              <div class="swiper-slide">
-                <img src="static/images/layout/layout3.png" alt="mars" style="width: 100%; border-radius: 12px;">
-                <p>Prompt: "The surface of Mars, rocky terrain with red sand, photorealistic"</p>
-              </div>
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
             </div>
+            <div class="navbar-menu">
+              <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://keunhong.com">
+                <span class="icon">
+                    <i class="fas fa-home"></i>
+                </span>
+                </a>
 
-            <!-- 箭头导航 -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    More Research
+                  </a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://hypernerf.github.io">
+                      HyperNeRF
+                    </a>
+                    <a class="navbar-item" href="https://nerfies.github.io">
+                      Nerfies
+                    </a>
+                    <a class="navbar-item" href="https://latentfusion.github.io">
+                      LatentFusion
+                    </a>
+                    <a class="navbar-item" href="https://photoshape.github.io">
+                      PhotoShape
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-          <!-- 引入 Swiper JS -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-          <script>
-            new Swiper('.swiper-container', {
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-              loop: true,
-              slidesPerView: 3,
-              spaceBetween: 20,
-            });
-          </script>
+            </div>
+          </nav>
 
 
         </div>
