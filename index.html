@@ -323,12 +323,17 @@
           <script>
             const swiper = new Swiper('.swiper-container', {
               loop: true,
+              autoplay: {
+                delay: 3000,       // 每张图显示 3 秒
+                disableOnInteraction: false  // 用户交互后仍继续自动播放
+              },
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               },
             });
           </script>
+
 
         </div>
       </div>
