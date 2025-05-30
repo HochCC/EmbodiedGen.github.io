@@ -124,7 +124,7 @@
               <span class="author-block">
                   Wenkang Qin<sup>2</sup>,</span></p>
               <span class="author-block">
-                  Dehui Wang<sup>3,4</sup>,</span>
+                  Dehui Wang<sup>4,3</sup>,</span>
               <!-- <span class="author-block">
                   Yao Mu<sup>3</sup>,</span> -->
               <span class="author-block">
@@ -252,32 +252,38 @@
     <!-- Method Section -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
+        <h2 class="title is-3">Results</h2>
         <div class="content has-text-justified">
           
-          <h3 class="title is-4">Model</h3>
-          <img src="./static/images/method/model.png" alt="Framework Diagram" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+          <h3 class="title is-4">Image-to-3D</h3>
+          <!-- <img src="./static/images/method/model.png" alt="Framework Diagram" style="max-width: 100%; height: auto; margin-bottom: 20px;"> -->
           <p>
-            To ensure multi-view consistency
-            during generation, we perform multi-view consistent modeling, enabling the generation process to
-            reason jointly over information from different viewpoints. On the conditions side, RoboTransfer in-
-            corporates fine-grained control by encoding both geometric and appearance information. Specifically,
-            we represent geometry using scaled depth maps and surface normal maps, capturing the underlying
-            3D structure of the scene. Meanwhile, the appearance is encoded using reference background images
-            and object-specific images, providing detailed control over texture, color, and contextual appearance.
-            In the following sections, we first introduce the multi-view consistent modeling, and then describe
-            the encoding mechanisms for geometric and appearance conditions, respectively.
+            Results here.
           </p>
 
-          <h3 class="title is-4">Dataset Construction</h3>
-          <img src="./static/images/method/data_construct.png" alt="Framework Diagram" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+          <h3 class="title is-4">Text-to-3D</h3>
           <p>
-            The data processing pipeline consists of two
-            main components: Geometry conditions (left) are derived by using Mono-Normal and Video Depth
-            Anything, which are scale-aligned with sensor depth to ensure consistency. Appearance conditions
-            (right) are obtained by sampling keyframes from the video. GPT-4 is used to generate object
-            descriptions, which are then processed by Grounding-SAM to create per-object masks. Additionally,
-            background inpainting is used to generate complete reference backgrounds.          
+            Results here.   
+          </p>
+
+          <h3 class="title is-4">Texture Generation</h3>
+          <p>
+            Results here.   
+          </p>
+
+          <h3 class="title is-4">Articulated Object Generation</h3>
+          <p>
+            Results here.   
+          </p>
+
+          <h3 class="title is-4">Scene Generation</h3>
+          <p>
+            Results here.   
+          </p>
+
+          <h3 class="title is-4">Layout Generation</h3>
+          <p>
+            Results here.   
           </p>
 
         </div>
@@ -286,8 +292,7 @@
   </div>
 </section>
 
-
-<!-- Results Section -->
+<!-- 
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -295,7 +300,6 @@
         <h2 class="title is-3">Qualitative Results</h2>
         <div class="content has-text-justified">
 
-          <!-- Real2Real -->
           <h3 class="title is-4">1. Real2Real</h3>
           <p>Placeholder for Real2Real result description.</p>
           <figure class="image is-16by9">
@@ -304,7 +308,6 @@
             </video>
           </figure>
 
-          <!-- Sim2Real -->
           <h3 class="title is-4">2. Sim2Real</h3>
           <p>Placeholder for Sim2Real result description.</p>
           <figure class="image is-16by9">
@@ -313,7 +316,6 @@
             </video>
           </figure>
 
-          <!-- Compare -->
           <h3 class="title is-4">3. Compare</h3>
           <p>Placeholder for comparison results between methods.</p>
           <figure class="image">
@@ -326,7 +328,6 @@
   </div>
 </section>
 
-<!-- Experiments Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -334,14 +335,12 @@
         <h2 class="title is-3">Experiments</h2>
         <div class="content has-text-justified">
 
-          <!-- Synthesis Quality -->
           <h3 class="title is-4">1. Synthesis Quality</h3>
           <p>Placeholder for synthesis quality evaluation and metrics.</p>
           <figure class="image">
             <img src="PATH/TO/synthesis-quality.png" alt="Synthesis Quality">
           </figure>
 
-          <!-- Real Robot Experiments -->
           <h3 class="title is-4">2. Real Robot Experiments</h3>
           <p>Placeholder for real-world robot deployment experiments and success rates.</p>
           <figure class="image is-16by9">
@@ -355,6 +354,7 @@
     </div>
   </div>
 </section>
+-->
 
 
 <section class="section" id="BibTeX">
